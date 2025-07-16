@@ -1,4 +1,4 @@
-# Dinosaurs - You Grow. I Grow. We Grow.
+# Dinosuars - You Grow. I Grow. We Grow
 
 This is a modern, responsive portfolio website for Dinosaurs, a Digital Solutions company that helps SMBs, startups, and D2C brands systemize their business through Web Design, App Development, SaaS Development, and Digital Marketing.
 
@@ -19,4 +19,3 @@ This is a modern, responsive portfolio website for Dinosaurs, a Digital Solution
 - Fast loading with optimized images
 
 ## 📂 Folder Structure
-
