@@ -1,44 +1,29 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online marketplace with real-time inventory management, payment processing, and analytics dashboard",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+    title: "E-commerce Platform",
+    description: "Modern, high-performance shopping experience featuring product catalogs, secure checkout, responsive UI, and real-time order tracking for boutique retail.",
+    tags: ["Next.js", "Firebase"],
+    image: "/rayomaben-img.png",
+    link: "https://www.therayomaben.com/",
   },
   {
-    title: "Healthcare Portal",
-    description: "HIPAA-compliant patient management system with telemedicine capabilities and secure document sharing",
-    tags: ["Next.js", "TypeScript", "AWS", "WebRTC"],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+    title: "Retail Billing & Inventory Web App",
+    description: "Lightning-fast billing and inventory management system tailored for kid-centric retail stores, with multi-user access and cloud-synced data.",
+    tags: ["Next.js", "Firebase"],
+    image: "/peekaboo-dash-img.png",
+    link: "https://peekaboominiclubs.com/login",
   },
   {
-    title: "FinTech Dashboard",
-    description: "Real-time financial analytics platform with data visualization and automated reporting",
-    tags: ["React", "Python", "MongoDB", "D3.js"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-  },
-  {
-    title: "Social Media App",
-    description: "Mobile-first social networking platform with live streaming and content discovery algorithms",
-    tags: ["React Native", "Firebase", "GraphQL"],
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
-  },
-  {
-    title: "IoT Monitoring System",
-    description: "Industrial IoT platform for real-time device monitoring and predictive maintenance",
-    tags: ["Vue.js", "MQTT", "InfluxDB", "Docker"],
-    image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800&q=80",
-  },
-  {
-    title: "AI-Powered CRM",
-    description: "Customer relationship management system with AI-driven insights and automation",
-    tags: ["Angular", "TensorFlow", "Redis", "Kubernetes"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    title: "Cafe POS System",
+    description: "Smart, efficient point-of-sale solution for cafes with real-time order management, billing, inventory tracking, and seamless device compatibility.",
+    tags: ["React Native", "Node.js", "Firebase"],
+    image: "/cafe-pos.png",
+    link: "#",
   },
 ];
 
@@ -46,7 +31,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card to-background" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Projects</h2>
@@ -70,11 +55,11 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
               </div>
-              
+
               <CardHeader>
                 <CardTitle className="text-xl">{project.title}</CardTitle>
               </CardHeader>
-              
+
               <CardContent>
                 <CardDescription className="text-base mb-4">
                   {project.description}
@@ -87,17 +72,17 @@ const Projects = () => {
                   ))}
                 </div>
               </CardContent>
-              
-              <CardFooter className="flex gap-2">
-                <Button variant="outline" size="sm" className="flex-1">
-                  <ExternalLink size={16} className="mr-2" />
-                  View
-                </Button>
-                <Button variant="outline" size="sm" className="flex-1">
-                  <Github size={16} className="mr-2" />
-                  Code
-                </Button>
-              </CardFooter>
+
+              {project.link && (
+                <CardFooter>
+                  <Button asChild variant="outline" size="sm" className="w-full">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink size={16} className="mr-2" />
+                      View Project
+                    </a>
+                  </Button>
+                </CardFooter>
+              )}
             </Card>
           ))}
         </div>
