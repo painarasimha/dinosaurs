@@ -1,4 +1,4 @@
-import { Code, Smartphone, Cloud, Database, Palette, Shield } from "lucide-react";
+import { Code, Smartphone, Cloud, Shield } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 const services = [
@@ -14,23 +14,13 @@ const services = [
   },
   {
     icon: Cloud,
-    title: "Cloud Solutions",
-    description: "Scalable cloud infrastructure and deployment on AWS, Azure, and Google Cloud",
-  },
-  {
-    icon: Database,
-    title: "Backend Development",
-    description: "Robust APIs and database architecture for complex business logic",
-  },
-  {
-    icon: Palette,
-    title: "UI/UX Design",
-    description: "Beautiful, intuitive interfaces that users love to interact with",
+    title: "DevOps & Security",
+    description: "Scalable cloud infrastructure and deployment and CI/CD pipelines, security audits, and performance optimization",
   },
   {
     icon: Shield,
-    title: "DevOps & Security",
-    description: "CI/CD pipelines, security audits, and performance optimization",
+    title: "Custom Software Development",
+    description: "Tailored software solutions to meet unique business requirements",
   },
 ];
 
@@ -45,7 +35,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <Card
               key={index}
