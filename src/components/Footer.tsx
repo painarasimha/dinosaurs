@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+// import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,25 +7,26 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              DevForge
+              Dinosaurs
             </h3>
             <p className="text-muted-foreground mb-4">
               Building tomorrow's software today. We transform ideas into exceptional digital experiences.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary transition-colors flex items-center justify-center group">
+            {/* Social links placeholder; enable when launch-ready */}
+            {/* <div className="flex gap-4">
+              <a href="https://github.com/" className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary transition-colors flex items-center justify-center group">
                 <Github className="text-foreground group-hover:text-primary-foreground transition-colors" size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary transition-colors flex items-center justify-center group">
+              <a href="https://linkedin.com/" className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary transition-colors flex items-center justify-center group">
                 <Linkedin className="text-foreground group-hover:text-primary-foreground transition-colors" size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary transition-colors flex items-center justify-center group">
+              <a href="https://twitter.com/" className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary transition-colors flex items-center justify-center group">
                 <Twitter className="text-foreground group-hover:text-primary-foreground transition-colors" size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary transition-colors flex items-center justify-center group">
+              <a href="mailto:contact@example.com" className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary transition-colors flex items-center justify-center group">
                 <Mail className="text-foreground group-hover:text-primary-foreground transition-colors" size={20} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div>
@@ -57,10 +58,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>contact@devforge.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>123 Tech Street</li>
-              <li>San Francisco, CA 94103</li>
+              <li>office@dinosaurs.org.in</li>
+              <li>+91 87622 83051</li>
+              <li>Udupi, 576101</li>
             </ul>
           </div>
         </div>
