@@ -19,12 +19,12 @@ const Hero = ({ onContactClick }: HeroProps) => {
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
-      
+
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-scale-in">
-            Transform Your Ideas Into Digital Reality
+            You Grow. I Grow. We Grow
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
             We craft exceptional software solutions that drive innovation and accelerate your business growth
