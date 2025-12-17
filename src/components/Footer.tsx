@@ -52,6 +52,26 @@ const Footer = () => {
                   Contact
                 </a>
               </li>
+              <li>
+                <a href="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/shipping-policy" className="text-muted-foreground hover:text-primary transition-colors">
+                  Shipping Policy
+                </a>
+              </li>
+              <li>
+                <a href="/refunds" className="text-muted-foreground hover:text-primary transition-colors">
+                  Refund & Cancellation
+                </a>
+              </li>
+              <li>
+                <a href="/terms-of-service" className="text-muted-foreground hover:text-primary transition-colors">
+                  Terms of Service
+                </a>
+              </li>
             </ul>
           </div>
 
