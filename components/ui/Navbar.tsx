@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -19,8 +20,8 @@ export function Navbar() {
   return (
     <>
       <header className="fixed top-0 left-0 w-full z-50 p-6 flex justify-between items-center mix-blend-difference">
-         <Link href="/" className="text-white font-sans font-bold text-xl tracking-tighter uppercase relative z-50">
-            DINOSAURS
+         <Link href="/" className="relative z-50">
+            <Image src="/Logo.png" alt="Dinosaurs" width={160} height={40} className="h-8 w-auto brightness-0 invert" priority />
          </Link>
 
          <button 
